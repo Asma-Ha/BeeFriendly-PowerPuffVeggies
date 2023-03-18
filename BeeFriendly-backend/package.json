@@ -1,0 +1,45 @@
+{
+  "name": "beefriendly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "tsc",
+    "test-db-connection": "node build/models/index.js",
+    "start": "node build/app.js",
+    "dev": "concurrently \"npx tsc -w\" \"nodemon -q build/app.js\""
+  },
+  "type": "commonjs",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "express": "^4.18.2",
+    "reflect-metadata": "^0.1.13",
+    "sequelize-typescript": "^2.1.5",
+    "sinon": "^15.0.1",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.17",
+    "@types/multer": "^1.4.7",
+    "@types/mysql": "^2.15.21",
+    "@types/node": "^18.15.0",
+    "@types/sequelize": "^4.28.14",
+    "@types/uuid": "^9.0.1",
+    "bcrypt": "^5.1.0",
+    "concurrently": "^7.6.0",
+    "cookie-parser": "^1.4.6",
+    "express-jwt": "^8.4.1",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.2.0",
+    "nodemon": "^2.0.21",
+    "sequelize": "^6.29.3",
+    "sequelize-auto": "^0.8.8",
+    "sequelize-test-helpers": "^1.4.3",
+    "ts-node": "^10.9.1",
+    "uuid": "^9.0.0"
+  }
+}
