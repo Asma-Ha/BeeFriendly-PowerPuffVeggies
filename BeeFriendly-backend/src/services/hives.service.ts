@@ -27,7 +27,7 @@ const hivesService = {
     }, 
 
     predictState :async (info : any) : Promise<string>=> {
-        return "health state determined by nouss work"
+        return "health state determined by the classifier model"
     },
 
     updateImg : async (img : hivesImgModel, info : any) : Promise<hivesImgModel> => {
