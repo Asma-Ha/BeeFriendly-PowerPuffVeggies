@@ -3,7 +3,7 @@ import express, {Express, Response, Request, NextFunction} from "express"
 
 import hivesRouter from "./routes/hives.routes";
 import userRouter from "./routes/beekeeper.routes";
-const port = 8000
+const port = 7000
 
 const app : Express = express()
 
